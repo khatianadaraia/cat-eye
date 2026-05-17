@@ -1,5 +1,5 @@
 """
-Skeleton Miner — Deterministic semantic evidence extraction for academic research.
+CatEye — Deterministic semantic evidence extraction for academic research.
 Copyright (c) 2026 Khatia Nadaraia. All rights reserved.
 """
 

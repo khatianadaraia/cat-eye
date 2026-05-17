@@ -1,5 +1,5 @@
 """
-Skeleton Miner — Deterministic semantic evidence extraction for academic research.
+CatEye — Deterministic semantic evidence extraction for academic research.
 Zero hallucination. Every word comes from your documents.
 Copyright (c) 2026 Khatia Nadaraia. All rights reserved.
 """
@@ -14,9 +14,9 @@ import streamlit as st
 from pathlib import Path
 from pypdf import PdfReader
 
-st.set_page_config(page_title="Skeleton Miner", page_icon="🦴", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="CatEye", page_icon="🐱", layout="wide", initial_sidebar_state="expanded")
 
-CACHE_DIR = Path(tempfile.gettempdir()) / "skeletonminer_cache"
+CACHE_DIR = Path(tempfile.gettempdir()) / "cateye_cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
 
@@ -175,7 +175,7 @@ st.markdown("""
 
 # --- Sidebar ---
 with st.sidebar:
-    st.markdown("### 🦴 Skeleton Miner")
+    st.markdown("### 🐱 CatEye")
     st.caption("v0.1.0 — by Khatia Nadaraia")
     st.markdown("---")
 
@@ -200,8 +200,8 @@ with st.sidebar:
 
 
 # --- Main ---
-st.markdown('<div class="main-title">Skeleton Miner</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">The anti-ChatGPT for academic writing. Upload your papers, define your argument skeleton, and extract exact evidence — no AI writing, no hallucination, just forensic retrieval.</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">CatEye</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">The anti-ChatGPT for academic writing. Upload your papers, define your argument structure, and extract exact evidence — no AI writing, no hallucination, just forensic retrieval.</div>', unsafe_allow_html=True)
 
 
 # --- Load PDFs ---
@@ -253,10 +253,10 @@ if chunks is None or embeddings is None:
     st.markdown("---")
     st.markdown('<div class="how-it-works">', unsafe_allow_html=True)
     st.markdown("""
-    **What this tool does:**
+    **What CatEye does:**
 
     You have a folder of research papers and a paper skeleton (your section headings).
-    This tool maps your entire library against your skeleton structure — showing you
+    CatEye maps your entire library against your skeleton structure — showing you
     exactly which passages from which papers support each section.
 
     **What makes it different from ChatGPT / NotebookLM / Anara:**
@@ -394,7 +394,6 @@ with tab_coverage:
                 st.code(f"{icon} Node {i:2d} │ avg={avg:.1f} top={top:.1f} │ {subtopic[:45]}", language=None)
 
         all_cited = set(source_counts.keys())
-        all_sources = set(r["source"] for results in results_map.values() for r in results)
         uncited_sources = set()
         if mode == "📁 Local folder" and folder_path:
             all_pdfs = set(f for f in os.listdir(folder_path) if f.lower().endswith(".pdf"))
