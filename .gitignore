@@ -1,0 +1,11 @@
+.cache/
+__pycache__/
+*.pyc
+*.npz
+*.egg-info/
+dist/
+build/
+.env
+*.pdf
+literature_review_index.html
+chapter2_evidence_index.html
