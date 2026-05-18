@@ -1,8 +1,6 @@
 # CatEye
 
-> The anti-ChatGPT for academic writing.
-
-CatEye is a deterministic evidence extraction tool for researchers. It maps your PDF library against your paper's argument structure — showing you exactly which passages from which papers support each section.
+CatEye is a deterministic evidence extraction tool for researchers. It maps your PDF library against your paper's argument structure, and shows you exactly which passages from which papers support each section.
 
 **Zero generation. Zero hallucination. Every word comes from your documents.**
 
@@ -11,9 +9,9 @@ CatEye is a deterministic evidence extraction tool for researchers. It maps your
 | Standard AI tools | CatEye |
 |---|---|
 | Generate text from training data | Shows exact original text from YOUR papers |
-| Black box — you can't verify the source | Every result links to the exact page |
+| Black box — you get paraphrased passages  | Every result links to the exact page |
 | Risk of hallucinated citations | Impossible to hallucinate — text comes directly from PDFs |
-| Write for you | Reads for you |
+| Write for you | Searches for you |
 
 ## How it works
 
@@ -49,7 +47,7 @@ streamlit run app.py
 
 - PhD students writing dissertations
 - Researchers writing literature reviews
-- Academics who want AI to read for them, not write for them
+- Academics who want AI to search for them, not write for them
 - Anyone who values academic integrity over convenience
 
 ## Philosophy
@@ -58,7 +56,7 @@ Every AI writing tool asks: "How can we generate text faster?"
 
 CatEye asks a different question: "How can we find the right evidence faster?"
 
-The most intellectually demanding part of academic writing — connecting ideas, building arguments, developing theory — is already done by the time you sit down to write. What remains is the tedious retrieval: finding which paper said what, on which page, to support the point you already know you want to make.
+The most intellectually demanding part of academic writing, connecting ideas, building arguments, developing theory  is already done by the time you sit down to write. What remains is the tedious retrieval: finding which paper said what, on which page, to support the point you already know you want to make.
 
 CatEye automates the tedious part without touching the intellectual part.
 
