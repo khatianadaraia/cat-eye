@@ -201,7 +201,7 @@ with st.sidebar:
 
 # --- Main ---
 st.markdown('<div class="main-title">CatEye</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">The anti-ChatGPT for academic writing. Upload your papers, define your argument structure, and extract exact evidence — no AI writing, no hallucination, just forensic retrieval.</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Upload your papers, define your argument structure, and extract exact evidence — no AI writing, no hallucination, just forensic retrieval.</div>', unsafe_allow_html=True)
 
 
 # --- Load PDFs ---
