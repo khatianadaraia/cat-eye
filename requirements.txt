@@ -1,5 +1,8 @@
-numpy
-pypdf
-sentence-transformers
-pyyaml
-streamlit
+# CPU-only PyTorch wheel keeps the image small enough for Streamlit Cloud's free tier.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==1.26.4
+torch==2.2.2
+pypdf==4.3.1
+sentence-transformers==2.7.0
+pyyaml==6.0.1
+streamlit==1.37.1
